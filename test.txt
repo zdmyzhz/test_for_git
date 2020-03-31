@@ -1,2 +1,12 @@
 2020/3/31
 start to learn git
+
+git init //初始化git仓库
+
+git add file //将file添加到准备提交队列
+
+git commit -m "xxxx" //将准备队列中的file提交,并添加备注信息xxxx
+
+git diff file //查看file修改的地方和不同
+
+git status //获取当前仓库状态
