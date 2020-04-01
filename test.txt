@@ -19,3 +19,5 @@ git reset --hard HEAD^ //回到上个版本
 
 git reset --hard commit_id //回到指定的版本
 
+don't betray yourself
+
