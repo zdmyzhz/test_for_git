@@ -10,3 +10,12 @@ git commit -m "xxxx" //将准备队列中的file提交,并添加备注信息xxxx
 git diff file //查看file修改的地方和不同
 
 git status //获取当前仓库状态
+
+git log //查看所有提交过的版本信息（提交历史）
+
+git reflog //查看所有分支的操作记录（命令历史）
+
+git reset --hard HEAD^ //回到上个版本
+
+git reset --hard commit_id //回到指定的版本
+
