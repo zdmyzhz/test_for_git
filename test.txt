@@ -23,3 +23,5 @@ don't betray yourself
 
 ============this is test====================
 
+git diff HEAD -- file //可以查看工作区和版本库里文件的差别
+
