@@ -7,7 +7,7 @@ git add file //将file添加到准备提交队列
 
 git commit -m "xxxx" //将准备队列中的file提交,并添加备注信息xxxx
 
-git diff file //查看file修改的地方和不同
+git diff file //查看file修改的地方和不同（比较工作区和暂存区）
 
 git status //获取当前仓库状态
 
@@ -21,7 +21,7 @@ git reset --hard commit_id //回到指定的版本
 
 don't betray yourself
 
-============this is test===================
+============this is test======================
 
-git diff HEAD -- file //可以查看工作区和版本库里文件的差别
+git diff HEAD -- file //比较工作区和版本库最新版本里file的差别
 
