@@ -25,3 +25,6 @@ don't betray yourself
 
 git diff HEAD -- file //比较工作区和版本库最新版本里file的差别
 
+git checkout -- file //将工作区修改但未提交到暂存区的file的内容恢复到未修改状态
+
+git reset HEAD file  //将暂存区的file的修改退回到工作区
