@@ -25,6 +25,6 @@ don't betray yourself
 
 git diff HEAD -- file //比较工作区和版本库最新版本里file的差别
 
-git checkout -- file //将工作区内容恢复到最近一次commit/add的状态（版本库/暂存区）
+git checkout -- file //将工作区内容恢复到最近一次commit/add的状态（版本库/暂存区），文件删除（版本库中还存在）后也可以用这个恢复
 
 git reset HEAD file  //将暂存区的file的修改退回到工作区
