@@ -37,3 +37,5 @@ git push origin master //将本地修改推送到远程库
 
 -- git remote add origin git@github.com:yourname/yourrepository.git  //将远程库关联到本地库，并使用SSH key 的方式
 
+-- git clone git@github.com:yourname/yourrepository.git //将远程库clone到本地（会创建对应库名的文件夹并克隆库内容）
+
