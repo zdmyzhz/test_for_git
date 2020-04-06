@@ -30,3 +30,5 @@ git checkout -- file //将工作区内容恢复到最近一次commit/add的状�
 git reset HEAD file  //将暂存区的file的修改退回到工作区
 
 git rm file //将文件的删除状态记录到暂存区，后续需要commit提交发到分支状态（文件若最近被修改过或者提交到过暂存区，则此命令会报错）
+
+git
