@@ -55,6 +55,14 @@ git branch -d xxx //删除xxx分支
 
 git merge --no-ff -m "xxx" branchname //合并分支时禁用快进模式，这样会生成一个新的提交版本，所以需要加上commit的信息(方便之后查看分支的情况)
 
-test stash
+git stash //将工作区修改的内容存储起来，将库状态设置为clean
 
+git stash list //查看所有工作暂存的内容
 
+git stash apply stash{x} //将当前工作区内容恢复到存储起来的状态，stash{x}是git stash list中的一个版本，但不会删除git stash list的内容
+
+git stash drop //删除git stash list中存储的工作区内容
+
+git stash pop //将当前工作区内容恢复到存储起来的状态并删除git stash list的内容
+
+git cherry-pick commit_id //将指定的提交版本复制到当前分支里，并在当前分支上提交一个新版本
