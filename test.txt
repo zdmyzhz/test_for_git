@@ -53,3 +53,5 @@ git merge xxx //合并xxx分支到当前分支
 
 git branch -d xxx //删除xxx分支
 
+测试下冲突
+
