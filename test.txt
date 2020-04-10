@@ -41,7 +41,15 @@ git push origin master //将本地修改推送到远程库
 
 ==================== branch ========================================
 
-git switch -c dev //创建并切换到dev分支
+git switch -c xxx //创建并切换到xxx分支
+
+git branch xxx  //创建xxx分支
+
+git switch xxx //切换到xxx分支
 
 git branch //查看分支情况，当前所在分支前会有*标记
+
+git merge xxx //合并xxx分支到当前分支
+
+git branch -d xxx //删除xxx分支
 
