@@ -55,4 +55,4 @@ git branch -d xxx //删除xxx分支
 
 git merge --no-ff -m "xxx" branchname //合并分支时禁用快进模式，这样会生成一个新的提交版本，所以需要加上commit的信息
 
-111
+
