@@ -39,3 +39,9 @@ git push origin master //将本地修改推送到远程库
 
 -- git clone git@github.com:yourname/yourrepository.git //将远程库clone到本地（会创建对应库名的文件夹并克隆库内容）
 
+==================== branch ========================================
+
+git switch -c dev //创建并切换到dev分支
+
+git branch //查看分支情况，当前所在分支前会有*标记
+
