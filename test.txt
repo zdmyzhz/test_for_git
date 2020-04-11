@@ -66,3 +66,5 @@ git stash drop //删除git stash list中存储的工作区内容
 git stash pop //将当前工作区内容恢复到存储起来的状态并删除git stash list的内容
 
 git cherry-pick commit_id //将指定的提交版本复制到当前分支里，并在当前分支上提交一个新版本
+
+git branch -D xxx  //可以强行删除一个未合并的分支，正常情况下未合并的分支无法使用-d删除
