@@ -68,3 +68,13 @@ git stash pop //将当前工作区内容恢复到存储起来的状态并删除g
 git cherry-pick commit_id //将指定的提交版本复制到当前分支里，并在当前分支上提交一个新版本
 
 git branch -D xxx  //可以强行删除一个未合并的分支，正常情况下未合并的分支无法使用-d删除
+
+****clone了远程库后本地只会有master分支，还需要新建分支并与远程库对应分支关联
+
+git switch -c <branchname> origin/<branchname> //在本地新建branchname分支并关联到远程的branchname分支，此处可以在本地设置不一样的分支名（不建议）
+
+git branch --set-upstream-to=origin/<branchname> dev //当本地此时所在分支未与远程对应分支关联时无法git pull 拉去远程分支内容，所以用此命令设置关联远程branchname
+
+git pull //抓取远程对应分支最新的提交
+
+git remote -v //查看远程库信息
