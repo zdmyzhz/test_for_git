@@ -78,3 +78,16 @@ git branch --set-upstream-to=origin/<branchname> dev //当本地此时所在分�
 git pull //抓取远程对应分支最新的提交
 
 git remote -v //查看远程库信息
+
+==============变基=============================================
+
+git rebase <branchname> //将当前分支的提交变基到<branchname>分支上
+
+git rebase --onto <branchname1> <branchname2> <branchname3> //取出 <branchname3> 分支，找出它从 <branchname2> 分支分歧之后的补丁， 然后把这些补丁在 <branchname1> 分支上重放一遍，让 <branchname3> 看起来像直接基于 <branchname1> 修改一样
+
+git rebase <branchname1> <branchname2> //将<branchname2>分支变基到<branchname1>分支，免去需要先切换到<branchname2>
+
+git pull --rebase //将远程对应分支的最新提交变基到本地分支
+
+***无论是通过变基，还是通过三方合并，整合的最终结果所指向的快照始终是一样的，只不过提交历史不同罢了。 
+***变基是将一系列提交按照原有次序依次应用到另一分支上，而合并是把最终结果合在一起。
