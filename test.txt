@@ -103,3 +103,11 @@ git tag //查看版本库中所有的标签
 git tag -a <tagname> -m "xxx" commit_id //将对应的commit_id打上标签并添加说明信息xxx
 
 git show <tagname> //查看对应标签信息
+
+git tag -d <tagname> //删除对应的标签
+
+git push origin <tagname> //将对应标签推送到远程
+
+git push origin --tags //一次性推送全部尚未推送到远程的本地标签
+
+git push origin :refs/tags/<tagname>  //删除远程标签（需要先将本地对应标签删除？）
