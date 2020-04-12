@@ -98,4 +98,6 @@ git tag <tagname> //创建标签到当前分支的head
 
 git tag <tagname> commit_id //创建标签到当前分支的指定commit_id
 
-git tag //查看
+git tag //查看版本库中所有的标签
+
+git tag -a <tagname> -m "xxx" commit_id //将对应的commit_id打上标签并添加说明信息xxx
