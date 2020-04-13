@@ -115,3 +115,7 @@ git push origin :refs/tags/<tagname>  //删除远程标签（需要先将本地�
 ==================================自定义=====================================
 
 ****在版本库根目录下创建.gitignore,其中添加对应文件名或后缀可以使得git忽略对应文件,然后将.gitignore提交
+
+git check-ignore -v <filename> //检查被忽略的<filename>被所在.gitignore文件中的第几行规则所忽略
+
+git config --global alias.<newmethod> <oldmethod>  //将当前用户下的<oldmethod>命令别名设置为<newmethod>，例如git config --global alias.ci commit 以后就可以使用git ci -m "xxx"来提交文件了，要删除时可以找用户主目录下的.gitconfig文件
