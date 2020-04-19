@@ -119,3 +119,5 @@ git push origin :refs/tags/<tagname>  //删除远程标签（需要先将本地�
 git check-ignore -v <filename> //检查被忽略的<filename>被所在.gitignore文件中的第几行规则所忽略
 
 git config --global alias.<newmethod> <oldmethod>  //将当前用户下的<oldmethod>命令别名设置为<newmethod>，例如git config --global alias.ci commit 以后就可以使用git ci -m "xxx"来提交文件了，要删除时可以找用户主目录下的.gitconfig文件
+
+git push origin --delete <branchname>  //删除远程<branchname>分支
